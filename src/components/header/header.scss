@@ -1,0 +1,44 @@
+@import "../../styles/index.scss";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include mobile {
+    position: unset;
+  }
+
+  .container {
+    max-width: 1400px;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mobile {
+      flex-direction: row;
+      padding: 0.5rem 1rem;
+    }
+
+    .logo {
+      cursor: pointer;
+      font-size: 2rem;
+      font-weight: 900;
+      @include mobile {
+        font-size: 1.3rem;
+      }
+    }
+
+    .menu {
+      cursor: pointer;
+    }
+  }
+}

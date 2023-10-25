@@ -1,11 +1,24 @@
-import styles from "./layout.module.css";
+import { Outlet, useNavigation } from "react-router-dom";
 
-interface Props {
-  children: React.ReactNode;
-}
+import "./layout.scss";
+import Loader from "../components/ui/loader/Loader";
+import Header from "../components/header/Header";
 
-const Layout = (props: Props) => {
-  return <div className={styles.layout}>{props.children}</div>;
+const Layout = () => {
+  const navigation = useNavigation();
+  const isLoading = navigation.state === "loading";
+
+  return (
+    <>
+      {isLoading && <Loader />}
+      <Header />
+      <div className="layout">
+        <main>
+          <Outlet />
+        </main>
+      </div>
+    </>
+  );
 };
 
 export default Layout;
