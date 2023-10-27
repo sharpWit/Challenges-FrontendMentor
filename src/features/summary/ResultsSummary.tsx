@@ -3,7 +3,7 @@ import data from "../../constants/data.json";
 
 const ResultsSummary = () => {
   return (
-    <div className="container">
+    <div className="summaryContainer">
       <div className="result">
         <div className="sectionTop">
           <h2 className="firstTitle">Your Result</h2>

@@ -1,17 +1,29 @@
-import { AlignJustify } from "lucide-react";
+import { Github } from "lucide-react";
 
 import "./header.scss";
-import Menu from "../menu/Menu";
+import DropdownMenu from "../menu/dropdown/DropdownMenu";
 
 const Header = () => {
   return (
     <div className="header">
-      <div className="container">
-        <div className="logo">SharpWit</div>
+      <div className="headerContainer">
         <div className="menu">
-          <AlignJustify>
-            <Menu />
-          </AlignJustify>
+          <DropdownMenu />
+        </div>
+        <div className="logoContainer">
+          <a
+            href="https://github.com/sharpWit"
+            rel="noreferrer"
+            target="_blank"
+            title="Visit my github profile"
+            aria-label="Visit my github profile"
+            className="github"
+          >
+            <Github />
+          </a>
+          <div className="logo">
+            <a href="/">SharpWit</a>
+          </div>
         </div>
       </div>
     </div>

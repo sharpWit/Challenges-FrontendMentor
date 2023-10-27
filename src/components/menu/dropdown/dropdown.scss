@@ -1,0 +1,7 @@
+.dropdown {
+  position: relative;
+}
+
+.dropdown:hover .menu-list {
+  display: block;
+}

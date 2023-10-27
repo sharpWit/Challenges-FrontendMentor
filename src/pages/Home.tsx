@@ -1,11 +1,11 @@
-// import QrCode from "../features/qrcode/QrCode";
-import ResultsSummary from "../features/summary/ResultsSummary";
+import Header from "../components/header/Header";
+import Hero from "../components/hero/Hero";
 
 const Home: React.FC = () => {
   return (
     <>
-      {/* <QrCode /> */}
-      <ResultsSummary />
+      <Header />
+      <Hero />
     </>
   );
 };

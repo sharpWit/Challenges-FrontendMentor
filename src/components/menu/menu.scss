@@ -1,0 +1,20 @@
+.menu-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  background-color: var(--color-grey-0);
+  border: 1px solid var(--color-grey-100);
+  padding: 0;
+  font-size: medium;
+  box-shadow: var(--shadow-md);
+}
+
+.menu-list li {
+  padding: 10px;
+}
+.menu-list li:hover {
+  background-color: var(--color-blue-100);
+  color: var(--color-blue-700);
+}
