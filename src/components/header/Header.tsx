@@ -2,8 +2,9 @@ import { Github } from "lucide-react";
 import { useLocation } from "react-router-dom";
 
 import "./header.scss";
-import DropdownMenu from "../menu/dropdown/DropdownMenu";
+// import DropdownMenu from "../menu/dropdown/DropdownMenu";
 import Sidebar from "../sidebar/Sidebar";
+import Dropdown from "../menu/Dropdown";
 
 const Header = () => {
   const location = useLocation();
@@ -12,11 +13,11 @@ const Header = () => {
   return (
     <div className="header">
       <div className="headerContainer">
-        {pathname === "/Features" ? (
+        {pathname.startsWith("/Features/") ? (
           <Sidebar />
         ) : (
           <div className="menu">
-            <DropdownMenu />
+            <Dropdown />
           </div>
         )}
         <div className="logoContainer">
