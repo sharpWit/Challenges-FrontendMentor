@@ -35,7 +35,7 @@ const sliderVariants = {
       duration: 20,
     },
   },
-};
+} as const;
 
 const Hero = () => {
   return (

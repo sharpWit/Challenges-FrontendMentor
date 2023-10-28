@@ -13,7 +13,7 @@ const Layout = () => {
       {isLoading && <Loader />}
       <Header />
       <div className="layout">
-        <main className="flex flex-col items-center min-h-screen">
+        <main className="flex flex-col items-center w-full min-h-screen">
           <Outlet />
         </main>
       </div>

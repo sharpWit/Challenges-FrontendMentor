@@ -4,14 +4,14 @@ import ResultsSummary from "../features/summary/ResultsSummary";
 
 const Features = () => {
   return (
-    <section className=" flex flex-col items-center gap-6">
-      <FeaturesCard title="QR Code">
+    <div className="snap-y snap-mandatory">
+      <FeaturesCard title="QR Code" id="qrcode">
         <QrCode />
       </FeaturesCard>
-      <FeaturesCard title="Results and Summary">
+      <FeaturesCard title="Results and Summary" id="resultsAndSummary">
         <ResultsSummary />
       </FeaturesCard>
-    </section>
+    </div>
   );
 };
 
