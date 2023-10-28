@@ -1,26 +1,21 @@
 export const menuItems = [
   {
     id: "1",
-    title: "Features",
-    slug: "/Features",
-  },
-  {
-    id: "2",
     title: "Newbie",
     slug: "/Newbie",
   },
   {
-    id: "3",
+    id: "2",
     title: "Junior",
     slug: "/Junior",
   },
   {
-    id: "4",
+    id: "3",
     title: "Intermediate",
     slug: "/Intermediate",
   },
   {
-    id: "5",
+    id: "4",
     title: "Advanced",
     slug: "/Advanced",
   },

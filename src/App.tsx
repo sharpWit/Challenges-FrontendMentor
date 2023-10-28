@@ -2,12 +2,14 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import Layout from "./layout/Layout";
 import Home from "./pages/Home";
-import Features from "./pages/Features";
+import Features from "./pages/features/Features";
 import Newbie from "./pages/Newbie";
 import Junior from "./pages/Junior";
 import Intermediate from "./pages/Intermediate";
 import Advanced from "./pages/Advanced";
 import Error from "./components/error/Error";
+import QrCode from "./pages/features/qrcode/QrCode";
+import ResultsSummary from "./pages/features/summary/ResultsSummary";
 
 const router = createBrowserRouter([
   {
@@ -16,9 +18,20 @@ const router = createBrowserRouter([
 
     children: [
       {
-        path: "/Features",
         element: <Features />,
         errorElement: <Error />,
+        children: [
+          {
+            path: "/Features/qrcode",
+            element: <QrCode />,
+            errorElement: <Error />,
+          },
+          {
+            path: "/Features/resultsAndSummary",
+            element: <ResultsSummary />,
+            errorElement: <Error />,
+          },
+        ],
       },
       {
         path: "/Newbie",
