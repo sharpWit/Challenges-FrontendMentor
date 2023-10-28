@@ -26,4 +26,4 @@ If you are developing a production application, we recommend updating the config
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 -
-[![Netlify Status](https://api.netlify.com/api/v1/badges/415437aa-6813-4434-8a77-bc323ae0785d/deploy-status)](https://app.netlify.com/sites/khosravisaeed/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9bc5c976-602a-47f4-8782-edc1df8e68fb/deploy-status)](https://app.netlify.com/sites/khosravisaeed/deploys)
